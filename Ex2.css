@@ -1,0 +1,41 @@
+body#exercice-2 {
+    width:100vw;
+    min-height: 100vh;
+    margin: 0;
+    padding:0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+body#exercice-2 > main {
+    display: grid;
+    grid-template-rows: 0.1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding:0.5em;
+}
+
+body#exercice-2 > main > h1 {
+    text-align: center;
+    grid-column: 1 / 4;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #102a38;
+        color: #11e056;
+    }
+    
+    a{
+         color: #11e056;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: #fbf8fc;
+        color: #940722;
+    }
+    
+    a{
+         color: #940722;
+    }
+}

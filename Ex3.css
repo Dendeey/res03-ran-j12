@@ -1,0 +1,61 @@
+body#exercice-3 {
+    width:100vw;
+    min-height: 100vh;
+    margin: 0;
+    padding:0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+body#exercice-3 figure {
+    margin:0;
+}
+
+body#exercice-3 > main {
+    display: grid;
+    grid-template-rows: 0.1fr 0.2fr 0.2fr;
+    padding:1em;
+    width:70%;
+    margin:auto;
+}
+
+body#exercice-3 > main h1 {
+    text-align: center;
+}
+
+body#exercice-3 > main > article {
+    padding:1em;
+}
+
+body#exercice-3 > main > article > header > figure {
+    width:100%;
+}
+
+body#exercice-3 > main > article > header > figure > img{
+    width:100%;
+}
+
+body#exercice-3 > main > article > main {
+    padding:1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body#exercice-3 > main > article > main p{
+    margin:0;
+}
+
+@media (orientation: portrait) {
+  body#exercice-3 > main > article{
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+
+  }
+}
+
+@media (orientation: landscape) {
+  body#exercice-3 > main > article{
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+  }
+}
